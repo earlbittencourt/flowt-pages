@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the Flowt app.">
+  <title>Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background: Canvas;
+      color: CanvasText;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+
+    h1, h2 {
+      line-height: 1.15;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      margin-bottom: 0.25rem;
+    }
+
+    h2 {
+      margin-top: 2.25rem;
+    }
+
+    .language-picker {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .language-picker button {
+      min-height: 40px;
+      padding: 8px 14px;
+      border: 1px solid color-mix(in srgb, CanvasText 20%, transparent);
+      border-radius: 8px;
+      background: Canvas;
+      color: CanvasText;
+      font: inherit;
+      font-weight: 650;
+      cursor: pointer;
+    }
+
+    .language-picker button[aria-pressed="true"] {
+      border-color: #0a84ff;
+      background: #0a84ff;
+      color: white;
+    }
+
+    .updated {
+      color: color-mix(in srgb, CanvasText 62%, transparent);
+      margin-bottom: 2rem;
+    }
+
+    a {
+      color: #0a84ff;
+    }
+
+    li + li {
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="language-picker" aria-label="Language / Idioma">
+      <button type="button" data-language="en" aria-pressed="false">English</button>
+      <button type="button" data-language="pt-BR" aria-pressed="false">Português</button>
+    </nav>
+
+    <section class="localized" data-content-language="en" lang="en" aria-labelledby="privacy-en">
+      <h1 id="privacy-en">Privacy Policy</h1>
+      <p class="updated">Last updated: July 14, 2026</p>
+
+      <p>Flowt is an independent app for organizing movies and shows, syncing supported actions with connected services, importing watch activity, and generating taste-based recommendations. This policy explains what data Flowt uses and how it may move between your device and services you choose to connect.</p>
+
+      <h2>Data Flowt uses</h2>
+      <p>Flowt may use library data, watched history, watch progress, lists, ratings, comments, reactions, search activity, favorite services, favorite genres, import states, sync queues, and technical identifiers for movies, shows, seasons, and episodes. This data is used to operate the app, calculate recommendations and insights, sync your library, and resume interrupted imports or sync operations.</p>
+
+      <h2>Trakt account connection</h2>
+      <p>When you connect a Trakt account, Flowt uses Trakt OAuth authorization to access the Trakt data you allow. Flowt may read or update your Trakt profile-related data, watch history, library, lists, ratings, progress, comments, replies, reactions, and other supported Trakt actions when you use those features in the app. You can revoke Flowt's Trakt access from your Trakt account settings.</p>
+
+      <h2>Imports and scrobbling</h2>
+      <p>Flowt can import or track activity from services such as Netflix, Viki, and TV Time when you enable those features. These integrations may create local records containing titles, episode information, watch dates, processing status, and matching metadata. If you enable sending to Trakt, Flowt may use those records to create permitted updates in your Trakt account.</p>
+
+      <h2>Local data on your device</h2>
+      <p>Flowt stores data locally on your device so the app can work quickly and continue after interruptions. Local data may include preferences, cache files, import state, sync queues, authorized tokens, recommendation signals, comment reaction state, and library snapshots. Deleting the app may remove local Flowt data from the device. Some data may also remain in third-party services you connected.</p>
+
+      <h2>Recommendations and AI features</h2>
+      <p>Flowt uses your library, history, preferences, and metadata to calculate recommendations, insights, match scores, and emotional battery readings. Some calculations happen locally. If Gemini-powered features are enabled, Flowt may send the prompt and the minimum context needed for that feature to Google's Gemini API. Do not enter sensitive personal information into AI-powered prompts.</p>
+
+      <h2>Purchases</h2>
+      <p>If Flowt offers paid features, purchases and subscriptions are processed by Apple through StoreKit and the App Store. Flowt may receive purchase entitlement information from Apple to unlock premium features, but payment details are handled by Apple.</p>
+
+      <h2>Notifications</h2>
+      <p>If you allow notifications, Flowt may use local library, history, and preference data to send relevant reminders or alerts. You can change notification permissions in iOS Settings.</p>
+
+      <h2>Third-party services</h2>
+      <p>Flowt may communicate with third-party services when you use features that depend on them. Their own terms and privacy policies apply to data they process:</p>
+      <ul>
+        <li><a href="https://trakt.tv/privacy">Trakt Privacy Policy</a></li>
+        <li><a href="https://www.themoviedb.org/privacy-policy">TMDB Privacy Policy</a></li>
+        <li><a href="https://www.omdbapi.com/">OMDb API</a></li>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></li>
+        <li><a href="https://help.netflix.com/legal/privacy">Netflix Privacy Statement</a></li>
+        <li><a href="https://www.viki.com/privacy">Viki Privacy Policy</a></li>
+        <li><a href="https://www.tvtime.com/privacy">TV Time Privacy Policy</a></li>
+      </ul>
+
+      <h2>Tracking and advertising</h2>
+      <p>Flowt does not use third-party advertising tracking or sell personal data. Flowt does not request App Tracking Transparency permission in the current build.</p>
+
+      <h2>Retention and deletion</h2>
+      <p>Flowt keeps local data while it is needed to operate the app, preserve preferences, sync pending actions, or improve the experience. You can delete the app to remove local app data from your device. Data stored by Trakt, Apple, Google, TMDB, Netflix, Viki, TV Time, or other connected services should be managed through those services.</p>
+
+      <h2>Security</h2>
+      <p>No storage or transmission method is perfect. Flowt aims to limit data use to what is needed for the app to function and uses platform-provided security mechanisms where appropriate.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this policy when Flowt, its integrations, or publication requirements change. The latest version will be available on this page.</p>
+
+      <h2>Contact</h2>
+      <p>For privacy questions, contact the developer through the <a href="https://earlbittencourt.github.io/flowt-pages/support/">Flowt Support page</a>.</p>
+    </section>
+
+    <section class="localized" data-content-language="pt-BR" lang="pt-BR" aria-labelledby="privacy-pt" hidden>
+      <h1 id="privacy-pt">Política de Privacidade</h1>
+      <p class="updated">Última atualização: 14 de julho de 2026</p>
+
+      <p>O Flowt é um aplicativo independente para organizar filmes e séries, sincronizar ações compatíveis com serviços conectados, importar atividades de reprodução e gerar recomendações baseadas no gosto do usuário. Esta política explica quais dados o Flowt utiliza e como eles podem circular entre seu dispositivo e os serviços que você decidir conectar.</p>
+
+      <h2>Dados utilizados pelo Flowt</h2>
+      <p>O Flowt pode utilizar dados da biblioteca, histórico de reprodução, progresso, listas, avaliações, comentários, reações, atividades de busca, serviços e gêneros favoritos, estados de importação, filas de sincronização e identificadores técnicos de filmes, séries, temporadas e episódios. Esses dados são usados para operar o aplicativo, calcular recomendações e insights, sincronizar sua biblioteca e retomar importações ou sincronizações interrompidas.</p>
+
+      <h2>Conexão com a conta do Trakt</h2>
+      <p>Quando você conecta uma conta do Trakt, o Flowt utiliza a autorização OAuth do Trakt para acessar os dados permitidos por você. Ao usar esses recursos no aplicativo, o Flowt pode ler ou atualizar dados relacionados ao seu perfil, histórico, biblioteca, listas, avaliações, progresso, comentários, respostas, reações e outras ações compatíveis com o Trakt. Você pode revogar o acesso do Flowt nas configurações da sua conta do Trakt.</p>
+
+      <h2>Importações e scrobbling</h2>
+      <p>O Flowt pode importar ou acompanhar atividades de serviços como Netflix, Viki e TV Time quando você ativa esses recursos. Essas integrações podem criar registros locais com títulos, informações de episódios, datas de reprodução, estado de processamento e metadados usados para correspondência. Se o envio ao Trakt estiver ativado, o Flowt poderá usar esses registros para criar atualizações permitidas na sua conta do Trakt.</p>
+
+      <h2>Dados locais no seu dispositivo</h2>
+      <p>O Flowt armazena dados localmente para que o aplicativo funcione com rapidez e possa continuar após interrupções. Os dados locais podem incluir preferências, arquivos de cache, estado de importações, filas de sincronização, tokens autorizados, sinais de recomendação, estado de reações a comentários e cópias da biblioteca. Apagar o aplicativo pode remover os dados locais do Flowt do dispositivo. Alguns dados também podem permanecer nos serviços de terceiros que você conectou.</p>
+
+      <h2>Recomendações e recursos de IA</h2>
+      <p>O Flowt utiliza sua biblioteca, histórico, preferências e metadados para calcular recomendações, insights, pontuações de afinidade e leituras da bateria emocional. Alguns cálculos são realizados localmente. Se os recursos do Gemini estiverem ativados, o Flowt poderá enviar à API Gemini do Google o prompt e o contexto mínimo necessário para o recurso. Não insira informações pessoais sensíveis em prompts de recursos de IA.</p>
+
+      <h2>Compras</h2>
+      <p>Quando o Flowt oferece recursos pagos, compras e assinaturas são processadas pela Apple por meio do StoreKit e da App Store. O Flowt pode receber da Apple informações sobre o direito de acesso à compra para liberar recursos premium, mas os dados de pagamento são administrados pela Apple.</p>
+
+      <h2>Notificações</h2>
+      <p>Se você permitir notificações, o Flowt poderá usar dados locais da biblioteca, do histórico e das preferências para enviar lembretes ou alertas relevantes. Você pode alterar a permissão de notificações nos Ajustes do iOS.</p>
+
+      <h2>Serviços de terceiros</h2>
+      <p>O Flowt pode se comunicar com serviços de terceiros quando você utiliza recursos que dependem deles. Os termos e as políticas de privacidade desses serviços se aplicam aos dados processados por eles:</p>
+      <ul>
+        <li><a href="https://trakt.tv/privacy">Política de Privacidade do Trakt</a></li>
+        <li><a href="https://www.themoviedb.org/privacy-policy">Política de Privacidade do TMDB</a></li>
+        <li><a href="https://www.omdbapi.com/">API do OMDb</a></li>
+        <li><a href="https://policies.google.com/privacy?hl=pt-BR">Política de Privacidade do Google</a></li>
+        <li><a href="https://www.apple.com/br/legal/privacy/">Política de Privacidade da Apple</a></li>
+        <li><a href="https://help.netflix.com/pt/legal/privacy">Declaração de Privacidade da Netflix</a></li>
+        <li><a href="https://www.viki.com/privacy">Política de Privacidade do Viki</a></li>
+        <li><a href="https://www.tvtime.com/privacy">Política de Privacidade do TV Time</a></li>
+      </ul>
+
+      <h2>Rastreamento e publicidade</h2>
+      <p>O Flowt não utiliza rastreamento publicitário de terceiros nem vende dados pessoais. A versão atual do Flowt não solicita a permissão de Transparência no Rastreamento de Aplicativos.</p>
+
+      <h2>Retenção e exclusão</h2>
+      <p>O Flowt mantém dados locais enquanto eles forem necessários para operar o aplicativo, preservar preferências, sincronizar ações pendentes ou melhorar a experiência. Você pode apagar o aplicativo para remover os dados locais do Flowt do dispositivo. Dados armazenados pelo Trakt, Apple, Google, TMDB, Netflix, Viki, TV Time ou outros serviços conectados devem ser gerenciados por meio desses serviços.</p>
+
+      <h2>Segurança</h2>
+      <p>Nenhum método de armazenamento ou transmissão é perfeito. O Flowt procura limitar o uso de dados ao que é necessário para o funcionamento do aplicativo e utiliza mecanismos de segurança fornecidos pela plataforma quando apropriado.</p>
+
+      <h2>Alterações</h2>
+      <p>Esta política poderá ser atualizada quando o Flowt, suas integrações ou os requisitos de publicação mudarem. A versão mais recente estará disponível nesta página.</p>
+
+      <h2>Contato</h2>
+      <p>Para dúvidas sobre privacidade, entre em contato com o desenvolvedor pela <a href="https://earlbittencourt.github.io/flowt-pages/support/">página de Suporte do Flowt</a>.</p>
+    </section>
+  </main>
+  <script>
+    const sections = document.querySelectorAll("[data-content-language]");
+    const languageButtons = document.querySelectorAll("[data-language]");
+
+    function showLanguage(language) {
+      sections.forEach((section) => {
+        section.hidden = section.dataset.contentLanguage !== language;
+      });
+      languageButtons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.language === language));
+      });
+      document.documentElement.lang = language;
+      document.title = language === "pt-BR" ? "Política de Privacidade" : "Privacy Policy";
+      localStorage.setItem("flowt-privacy-language", language);
+    }
+
+    languageButtons.forEach((button) => {
+      button.addEventListener("click", () => showLanguage(button.dataset.language));
+    });
+
+    const savedLanguage = localStorage.getItem("flowt-privacy-language");
+    const preferredLanguage = navigator.language.toLowerCase().startsWith("pt") ? "pt-BR" : "en";
+    showLanguage(savedLanguage === "pt-BR" || savedLanguage === "en" ? savedLanguage : preferredLanguage);
+  </script>
+</body>
+</html>

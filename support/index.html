@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official support page for the Flowt app.">
+  <title>Flowt Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      background: Canvas;
+      color: CanvasText;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+
+    h1, h2 {
+      line-height: 1.15;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      margin: 0 0 0.5rem;
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+    }
+
+    .language-picker {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .language-picker button {
+      min-height: 40px;
+      padding: 8px 14px;
+      border: 1px solid color-mix(in srgb, CanvasText 20%, transparent);
+      border-radius: 8px;
+      background: Canvas;
+      color: CanvasText;
+      font: inherit;
+      font-weight: 650;
+      cursor: pointer;
+    }
+
+    .language-picker button[aria-pressed="true"] {
+      border-color: #0a84ff;
+      background: #0a84ff;
+      color: white;
+    }
+
+    a {
+      color: #0a84ff;
+    }
+
+    .intro {
+      color: color-mix(in srgb, CanvasText 70%, transparent);
+      font-size: 1.08rem;
+      max-width: 68ch;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 28px 0 8px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 48px;
+      padding: 11px 18px;
+      border: 1px solid color-mix(in srgb, CanvasText 20%, transparent);
+      border-radius: 8px;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      border-color: #0a84ff;
+      background: #0a84ff;
+      color: white;
+    }
+
+    .notice {
+      margin-top: 24px;
+      padding: 16px 18px;
+      border-left: 4px solid #ff9f0a;
+      background: color-mix(in srgb, #ff9f0a 10%, Canvas);
+    }
+
+    li + li {
+      margin-top: 0.55rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      color: color-mix(in srgb, CanvasText 62%, transparent);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="language-picker" aria-label="Language / Idioma">
+      <button type="button" data-language="en" aria-pressed="false">English</button>
+      <button type="button" data-language="pt-BR" aria-pressed="false">Português</button>
+    </nav>
+
+    <section class="localized" data-content-language="en" lang="en" aria-labelledby="support-en">
+      <h1 id="support-en">Flowt Support</h1>
+      <p class="intro">Need help with Flowt? Contact us about app behavior, Trakt synchronization, imports, purchases, notifications, comments, or feature feedback.</p>
+
+      <div class="actions">
+        <a class="button primary" href="mailto:flowttest@gmail.com?subject=Flowt%20Support&amp;body=Flowt%20version%20and%20build%3A%0AiPhone%20model%20and%20iOS%20version%3A%0A%0AWhat%20happened%3A%0A%0AWhat%20you%20expected%3A%0A%0ASteps%20to%20reproduce%3A%0A1.%20%0A2.%20%0A3.%20">Email Flowt Support</a>
+      </div>
+      <p>This opens your default email app with a short support template. You can attach screenshots before sending.</p>
+
+      <div class="notice"><strong>Protect your account.</strong> Never send passwords, Trakt authorization codes, API keys, access tokens, payment information, or other sensitive data.</div>
+
+      <h2>What to include</h2>
+      <ul>
+        <li>Flowt version and build number.</li>
+        <li>iPhone model and iOS version.</li>
+        <li>A short description of what happened and what you expected.</li>
+        <li>Steps that reproduce the problem, plus screenshots when useful.</li>
+        <li>The affected movie or show title, without sharing private account data.</li>
+      </ul>
+
+      <h2>Purchases and subscriptions</h2>
+      <p>If an App Store purchase completed but Flowt Premium was not unlocked, first use Restore Purchases in Flowt and then contact us with the approximate purchase date. Apple manages billing, refunds, and payment methods through <a href="https://support.apple.com/billing">Apple Billing Support</a>.</p>
+
+      <h2>Trakt accounts</h2>
+      <p>Flowt is an independent app that connects to Trakt through its API. Contact Flowt Support for app behavior and synchronization problems. Password recovery, account administration, and Trakt service availability are managed by <a href="https://forums.trakt.tv/c/support/">Trakt Support</a>.</p>
+    </section>
+
+    <section class="localized" data-content-language="pt-BR" lang="pt-BR" aria-labelledby="support-pt" hidden>
+      <h1 id="support-pt">Suporte do Flowt</h1>
+      <p class="intro">Precisa de ajuda com o Flowt? Entre em contato sobre funcionamento do aplicativo, sincronização com o Trakt, importações, compras, notificações, comentários ou sugestões.</p>
+
+      <div class="actions">
+        <a class="button primary" href="mailto:flowttest@gmail.com?subject=Suporte%20do%20Flowt&amp;body=Vers%C3%A3o%20e%20build%20do%20Flowt%3A%0AModelo%20do%20iPhone%20e%20vers%C3%A3o%20do%20iOS%3A%0A%0AO%20que%20aconteceu%3A%0A%0AO%20que%20voc%C3%AA%20esperava%3A%0A%0APassos%20para%20reproduzir%3A%0A1.%20%0A2.%20%0A3.%20">Enviar e-mail ao Suporte do Flowt</a>
+      </div>
+      <p>Isso abre seu aplicativo de e-mail padrão com um modelo curto de suporte. Você pode anexar capturas de tela antes de enviar.</p>
+
+      <div class="notice"><strong>Proteja sua conta.</strong> Nunca envie senhas, códigos de autorização do Trakt, chaves de API, tokens de acesso, dados de pagamento ou outras informações sensíveis.</div>
+
+      <h2>O que informar</h2>
+      <ul>
+        <li>Versão e número da build do Flowt.</li>
+        <li>Modelo do iPhone e versão do iOS.</li>
+        <li>Uma descrição curta do que aconteceu e do resultado esperado.</li>
+        <li>Passos para reproduzir o problema e capturas de tela quando ajudarem.</li>
+        <li>O título do filme ou da série afetada, sem compartilhar dados privados da conta.</li>
+      </ul>
+
+      <h2>Compras e assinaturas</h2>
+      <p>Se uma compra da App Store foi concluída, mas o Flowt Premium não foi liberado, primeiro use Restaurar Compras no Flowt e depois entre em contato informando a data aproximada da compra. Cobranças, reembolsos e métodos de pagamento são administrados pelo <a href="https://support.apple.com/pt-br/billing">Suporte de Cobrança da Apple</a>.</p>
+
+      <h2>Contas do Trakt</h2>
+      <p>O Flowt é um aplicativo independente que se conecta ao Trakt por meio de sua API. Procure o Suporte do Flowt para problemas no aplicativo ou na sincronização. Recuperação de senha, administração da conta e disponibilidade do serviço Trakt são tratados pelo <a href="https://forums.trakt.tv/c/support/">Suporte do Trakt</a>.</p>
+    </section>
+
+    <footer class="localized" data-content-language="en" lang="en">
+      <p><a href="https://earlbittencourt.github.io/flowt-pages/privacy/">Privacy Policy</a> · <a href="https://earlbittencourt.github.io/flowt-pages/">Flowt</a></p>
+      <p>Last updated: July 14, 2026.</p>
+    </footer>
+
+    <footer class="localized" data-content-language="pt-BR" lang="pt-BR" hidden>
+      <p><a href="https://earlbittencourt.github.io/flowt-pages/privacy/">Política de Privacidade</a> · <a href="https://earlbittencourt.github.io/flowt-pages/">Flowt</a></p>
+      <p>Última atualização: 14 de julho de 2026.</p>
+    </footer>
+  </main>
+  <script>
+    const sections = document.querySelectorAll("[data-content-language]");
+    const languageButtons = document.querySelectorAll("[data-language]");
+
+    function showLanguage(language) {
+      sections.forEach((section) => {
+        section.hidden = section.dataset.contentLanguage !== language;
+      });
+      languageButtons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.language === language));
+      });
+      document.documentElement.lang = language;
+      document.title = language === "pt-BR" ? "Suporte do Flowt" : "Flowt Support";
+      localStorage.setItem("flowt-support-language", language);
+    }
+
+    languageButtons.forEach((button) => {
+      button.addEventListener("click", () => showLanguage(button.dataset.language));
+    });
+
+    const savedLanguage = localStorage.getItem("flowt-support-language");
+    const preferredLanguage = navigator.language.toLowerCase().startsWith("pt") ? "pt-BR" : "en";
+    showLanguage(savedLanguage === "pt-BR" || savedLanguage === "en" ? savedLanguage : preferredLanguage);
+  </script>
+</body>
+</html>
