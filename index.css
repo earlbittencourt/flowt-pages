@@ -338,7 +338,9 @@ a { color: inherit; }
 .ray-card-visual { display: flex; align-items: flex-end; justify-content: center; background: linear-gradient(145deg, #d9edf0 0%, #c3e0e5 60%, #aeced7 100%); }
 .ray-card-orbit { position: absolute; width: 390px; height: 390px; border: 1px solid rgba(22, 21, 18, .12); border-radius: 50%; box-shadow: 0 0 0 62px rgba(255, 255, 255, .13), 0 0 0 124px rgba(255, 255, 255, .07); }
 .ray-card-visual img { position: relative; z-index: 2; width: 95%; height: 94%; object-fit: contain; object-position: center bottom; filter: drop-shadow(0 22px 30px rgba(66, 78, 71, .18)); transition: transform .8s var(--ease-out); }
-.care-card-ray:hover .ray-card-visual img { transform: translateY(-5px) rotate(-1deg) scale(1.02); }
+@media (hover: hover) and (pointer: fine) {
+  .care-card-ray:hover .ray-card-visual img { transform: translateY(-5px) scale(1.02); }
+}
 .rhythm-card-visual { display: flex; align-items: stretch; padding: 0; background: #000; }
 .rhythm-card-visual img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
 .choice-card-visual { display: flex; flex-direction: column; padding: 24px; background: linear-gradient(145deg, #e8dfd3, #d5c8b9); }
@@ -392,7 +394,7 @@ a { color: inherit; }
 
 /* Closing and footer */
 .closing { min-height: 720px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 120px 32px; text-align: center; }
-.closing-icon { position: relative; z-index: 2; width: 112px; margin-bottom: 44px; border-radius: 30px; box-shadow: 0 24px 60px rgba(58, 35, 24, .18); }
+.closing-icon { position: relative; z-index: 2; width: 112px; height: auto; aspect-ratio: 1; margin-bottom: 44px; border-radius: 30px; object-fit: cover; box-shadow: 0 24px 60px rgba(58, 35, 24, .18); }
 .closing-title { max-width: 1000px; margin: 0; font-family: var(--display); font-size: clamp(4rem, 7vw, 7.2rem); font-weight: 600; letter-spacing: -.042em; line-height: .92; }
 .closing-subtitle { position: relative; z-index: 2; max-width: 620px; margin: 30px auto 0; color: var(--ink-soft); font-size: 1.08rem; line-height: 1.65; }
 .closing-store-badge { position: relative; z-index: 2; margin-top: 36px; }
