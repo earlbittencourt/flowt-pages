@@ -1,32 +1,299 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flowt</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.55;
-      background: Canvas;
-      color: CanvasText;
-    }
-
-    body {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 56px 24px;
-    }
-
-    a { color: #0a84ff; }
-  </style>
+  <meta name="theme-color" content="#f2eee6">
+  <title>Flowt — Feito para quem assiste de verdade</title>
+  <meta name="description" content="Memórias, recomendações e insights construídos a partir do seu jeito de assistir.">
+  <link rel="icon" href="images/appicon.png">
+  <link rel="apple-touch-icon" href="images/appicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&amp;family=Instrument+Serif:ital@0;1&amp;family=Inter+Tight:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <main>
-    <h1>Flowt</h1>
-    <p>Flowt is an independent app for organizing your watched movies and shows, understanding your taste, and syncing supported actions with connected services.</p>
-    <p><a href="./support/">Support</a> · <a href="./privacy/">Privacy Policy</a></p>
+  <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
+
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#top" aria-label="Flowt — início" data-i18n-aria="aria.home">
+      <span class="brand-wordmark">Flowt</span>
+    </a>
+
+    <div class="header-actions">
+      <div class="language-switch" role="group" aria-label="Idioma" data-i18n-aria="aria.language">
+        <button type="button" data-language="pt" class="is-active" aria-pressed="true">PT</button>
+        <button type="button" data-language="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero chapter chapter-warm" id="top" data-theme="light">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="hero-product-mark reveal" aria-hidden="true">
+            <img src="images/appicon.png" width="24" height="24" alt="">
+            <span>Flowt</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="title-line reveal" data-i18n="hero.line1">Feito para quem</span>
+            <span class="title-line title-line-accent reveal" data-i18n="hero.line2">assiste de verdade.</span>
+          </h1>
+          <p class="hero-deck reveal" data-i18n="hero.deck">Memórias, recomendações e insights construídos a partir do seu jeito de assistir.</p>
+          <p class="hero-support reveal" data-i18n="hero.support">O Flowt transforma o que você assiste em fases, entende o seu ritmo e ajuda a encontrar o que combina com cada momento.</p>
+          <div class="app-store-badge hero-store-badge reveal" aria-disabled="true">
+            <span class="apple-mark" aria-hidden="true"></span>
+            <span><small data-i18n="store.soon">Em breve na</small><strong>App Store</strong></span>
+          </div>
+        </div>
+        <div class="hero-stage" aria-label="Prévia do aplicativo Flowt" data-i18n-aria="aria.preview">
+          <figure class="hero-hand-phone reveal">
+            <div class="hero-hand-screen">
+              <img src="site-img/optimized/pt/home.jpg" data-src-pt="site-img/optimized/pt/home.jpg" data-src-en="site-img/optimized/en/home.jpg" width="900" height="1955" alt="Tela inicial do Flowt" data-i18n-alt="alt.home" fetchpriority="high">
+            </div>
+            <img class="hero-hand-frame" src="site-img/shared/phone-hand.png" width="1200" height="1600" alt="" aria-hidden="true" fetchpriority="high">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto chapter chapter-noir motion-section" id="manifesto" data-theme="dark">
+      <div class="manifesto-glow" aria-hidden="true"></div>
+      <div class="manifesto-inner">
+        <p class="eyebrow eyebrow-light reveal" data-i18n="manifesto.eyebrow">Histórias deixam rastros</p>
+        <h2 class="manifesto-title">
+          <span data-i18n="manifesto.line1">Não é só</span>
+          <em data-i18n="manifesto.line2">o que você vê.</em>
+          <span data-i18n="manifesto.line3">É o que fica.</span>
+        </h2>
+        <p class="manifesto-caption reveal" data-i18n="manifesto.caption">O Flowt transforma o seu histórico em uma narrativa sobre fases, afetos e descobertas.</p>
+      </div>
+      <div class="manifesto-marquee" aria-hidden="true">
+        <span>WATCHED · FELT · REMEMBERED · WATCHED · FELT · REMEMBERED ·</span>
+      </div>
+    </section>
+
+    <section class="memories chapter chapter-noir motion-section" id="memories" data-theme="dark">
+      <div class="section-intro section-intro-light">
+        <p class="eyebrow eyebrow-light reveal" data-i18n="memories.eyebrow">Memórias</p>
+        <h2 class="display-title reveal" data-i18n="memories.title">Listas guardam títulos. Flowt guarda fases.</h2>
+        <p class="section-deck reveal" data-i18n="memories.deck">Cada obra encontra um lugar no período da sua vida em que ela realmente importou.</p>
+      </div>
+
+      <div class="memory-stage" aria-label="Exemplos de memórias culturais" data-i18n-aria="aria.memories">
+        <article class="memory-poster memory-poster-one" data-memory-card>
+          <img src="site-img/optimized/pt/memory-1.jpg" data-src-pt="site-img/optimized/pt/memory-1.jpg" data-src-en="site-img/optimized/en/memory1.jpg" width="900" height="1955" alt="Fase O ciclo dos dramas emocionais" data-i18n-alt="alt.memory1" loading="lazy" decoding="async">
+        </article>
+        <article class="memory-poster memory-poster-two" data-memory-card>
+          <img src="site-img/optimized/pt/memory-2.jpg" data-src-pt="site-img/optimized/pt/memory-2.jpg" data-src-en="site-img/optimized/en/memory-2.jpg" width="900" height="1955" alt="Fase A sequência dos títulos intensos" data-i18n-alt="alt.memory2" loading="lazy" decoding="async">
+        </article>
+        <article class="memory-poster memory-poster-three" data-memory-card>
+          <img src="site-img/optimized/pt/memory-3.jpg" data-src-pt="site-img/optimized/pt/memory-3.jpg" data-src-en="site-img/optimized/en/memory-3.jpg" width="900" height="1955" alt="Fase Séries que pedem retorno" data-i18n-alt="alt.memory3" loading="lazy" decoding="async">
+        </article>
+      </div>
+
+      <p class="memory-footnote reveal" data-i18n="memories.footnote">Seu histórico deixa de ser uma planilha e passa a ter contexto.</p>
+    </section>
+
+    <section class="personalization chapter chapter-warm" id="personalization" data-theme="light">
+      <div class="section-intro">
+        <p class="eyebrow reveal" data-i18n="personal.eyebrow">Personalização que você entende</p>
+        <h2 class="display-title reveal" data-i18n="personal.title">O algoritmo não é uma caixa-preta. É um espelho.</h2>
+      </div>
+
+      <div class="feature-row feature-row-vibe">
+        <div class="feature-copy reveal">
+          <span class="feature-number">01</span>
+          <h3 data-i18n="personal.vibe.title">Comece pelo que quer sentir.</h3>
+          <p data-i18n="personal.vibe.body">Descreva a vibe — leve, inquietante, bonita ou estranha. O Flowt encontra histórias para o seu momento, não para uma categoria.</p>
+          <div class="prompt-example">
+            <span data-i18n="personal.vibe.prompt">“Algo bonito para desacelerar.”</span>
+            <span class="prompt-cursor" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="feature-visual feature-visual-vibe reveal">
+          <div class="ambient-card ambient-card-top" aria-hidden="true">
+            <span data-i18n="personal.tag.slowCinema">cinema lento</span><strong data-i18n="personal.tag.calm">calmo</strong>
+          </div>
+          <figure class="phone phone-feature">
+            <img src="site-img/optimized/pt/discovery-vibe.jpg" data-src-pt="site-img/optimized/pt/discovery-vibe.jpg" data-src-en="site-img/optimized/en/discovery-vibe.jpg" width="900" height="1955" alt="Busca por vibe no Flowt" data-i18n-alt="alt.discover" loading="lazy" decoding="async">
+          </figure>
+          <div class="vibe-bubble vibe-bubble-one" aria-hidden="true" data-i18n="personal.tag.comfort">conforto</div>
+          <div class="vibe-bubble vibe-bubble-two" aria-hidden="true" data-i18n="personal.tag.curious">curioso</div>
+          <div class="vibe-bubble vibe-bubble-three" aria-hidden="true" data-i18n="personal.tag.intense">intenso</div>
+        </div>
+      </div>
+
+      <div class="feature-row feature-row-explain">
+        <div class="feature-copy reveal">
+          <span class="feature-number">02</span>
+          <h3 data-i18n="personal.explain.title">Saiba por que combina.</h3>
+          <p data-i18n="personal.explain.body">Vibe, histórico, ritmo e preferências aparecem na recomendação. Você vê os sinais e continua no controle.</p>
+          <ul class="signal-list" aria-label="Sinais usados pelo Flowt" data-i18n-aria="aria.signals">
+            <li><span data-i18n="personal.signal1">Seu momento</span><strong>40%</strong></li>
+            <li><span data-i18n="personal.signal2">Seu histórico</span><strong>35%</strong></li>
+            <li><span data-i18n="personal.signal3">Seu ritmo</span><strong>25%</strong></li>
+          </ul>
+        </div>
+
+        <div class="feature-visual feature-visual-explain reveal">
+          <figure class="phone phone-feature phone-tilted">
+            <img src="site-img/optimized/pt/why-fits-you.jpg" data-src-pt="site-img/optimized/pt/why-fits-you.jpg" data-src-en="site-img/optimized/en/why-fits-you.jpg" width="900" height="1955" alt="Explicação de recomendação no Flowt" data-i18n-alt="alt.series" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="care chapter chapter-sky" id="care" data-theme="light">
+      <div class="section-intro care-intro">
+        <p class="eyebrow reveal" data-i18n="care.eyebrow">Um algoritmo com cuidado</p>
+        <h2 class="display-title reveal" data-i18n="care.title">Seu ritmo muda. O Flowt acompanha.</h2>
+        <p class="section-deck reveal" data-i18n="care.deck">O Flowt não tenta adivinhar seu humor. Ele compara o seu momento com o seu próprio histórico para recomendar com contexto — não para prender sua atenção.</p>
+      </div>
+
+      <div class="care-grid">
+        <article class="care-card care-card-ray reveal">
+          <div class="care-visual ray-card-visual">
+            <span class="care-visual-label" aria-hidden="true">RAY · FLOWT</span>
+            <div class="ray-card-orbit" aria-hidden="true"></div>
+            <img src="images/optimized/ray-wave.png" width="900" height="900" alt="Ray acenando" data-i18n-alt="alt.rayWave" loading="lazy" decoding="async">
+          </div>
+          <div class="care-card-copy">
+            <span class="care-card-index">01</span>
+            <h3 data-i18n="care.ray.title">Conheça Ray, sua companhia no Flowt.</h3>
+            <p data-i18n="care.ray.body">Ele transforma sinais complexos em uma leitura simples, sempre por perto e sem julgamentos.</p>
+          </div>
+        </article>
+
+        <article class="care-card care-card-reading reveal">
+          <div class="care-visual rhythm-card-visual" aria-hidden="true">
+            <img src="site-img/optimized/pt/battery.jpg" data-src-pt="site-img/optimized/pt/battery.jpg" data-src-en="site-img/optimized/en/battery.jpg" width="900" height="977" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="care-card-copy">
+            <span class="care-card-index">02</span>
+            <h3 data-i18n="care.reading.title">O seu normal é a referência.</h3>
+            <p data-i18n="care.reading.body">Intensidade, frequência, maratonas, novidade e o tempo desde o último check-in ajudam o Flowt a entender seu ritmo cultural.</p>
+          </div>
+        </article>
+
+        <article class="care-card care-card-choice reveal">
+          <div class="care-visual choice-card-visual" aria-hidden="true">
+            <div class="choice-card-head">
+              <span data-i18n="care.choice.visualTitle">O QUE COMBINA AGORA</span>
+              <i></i>
+            </div>
+            <div class="choice-option is-selected">
+              <span class="choice-icon">↓</span>
+              <div><strong data-i18n="care.choice.ease">Aliviar</strong><small data-i18n="care.choice.easeHint">familiar, curto, gentil</small></div>
+              <em></em>
+            </div>
+            <div class="choice-option">
+              <span class="choice-icon">≈</span>
+              <div><strong data-i18n="care.choice.keep">Manter</strong><small data-i18n="care.choice.keepHint">continuar no seu ritmo</small></div>
+              <em></em>
+            </div>
+            <div class="choice-option">
+              <span class="choice-icon">↗</span>
+              <div><strong data-i18n="care.choice.explore">Explorar</strong><small data-i18n="care.choice.exploreHint">novidade e mais densidade</small></div>
+              <em></em>
+            </div>
+          </div>
+          <div class="care-card-copy">
+            <span class="care-card-index">03</span>
+            <h3 data-i18n="care.choice.title">Nem todo momento pede outra descoberta.</h3>
+            <p data-i18n="care.choice.body">Às vezes o melhor é continuar algo familiar, escolher uma história curta, guardar para depois — ou simplesmente fazer uma pausa.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="care-statement reveal" data-i18n="care.statement">O objetivo não é aumentar o tempo de tela. É tornar cada escolha mais adequada ao momento.</p>
+    </section>
+
+    <section class="identity chapter chapter-noir motion-section" id="identity" data-theme="dark">
+      <div class="identity-sticky">
+        <div class="identity-copy">
+          <p class="eyebrow eyebrow-light reveal" data-i18n="identity.eyebrow">Seu perfil de espectador</p>
+          <h2 class="display-title reveal" data-i18n="identity.title">Não é um rótulo. É uma perspectiva.</h2>
+          <p class="section-deck reveal" data-i18n="identity.deck">O Flowt reconhece padrões no longo prazo e devolve uma leitura viva do seu repertório.</p>
+        </div>
+
+        <div class="identity-canvas">
+          <figure class="identity-art identity-art-one is-active" data-profile-frame="0">
+            <img src="images/optimized/profile-cult.jpg" width="960" height="640" alt="Perfil Curador Cult" loading="lazy" decoding="async">
+            <figcaption><span data-i18n="identity.profile1.kicker">Perfil atual</span><strong data-i18n="identity.profile1.title">Curador Cult</strong></figcaption>
+          </figure>
+          <figure class="identity-art identity-art-two" data-profile-frame="1">
+            <img src="images/optimized/profile-intense.jpg" width="960" height="640" alt="Perfil Espectador Intenso" loading="lazy" decoding="async">
+            <figcaption><span data-i18n="identity.profile2.kicker">Outra leitura</span><strong data-i18n="identity.profile2.title">Espectador Intenso</strong></figcaption>
+          </figure>
+          <figure class="identity-art identity-art-three" data-profile-frame="2">
+            <img src="images/optimized/profile-cozy.jpg" width="960" height="640" alt="Perfil Refúgio Emocional" loading="lazy" decoding="async">
+            <figcaption><span data-i18n="identity.profile3.kicker">Outro ritmo</span><strong data-i18n="identity.profile3.title">Refúgio Emocional</strong></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="perspective chapter chapter-wine motion-section" id="perspective" data-theme="dark">
+      <div class="perspective-copy">
+        <p class="eyebrow eyebrow-light reveal" data-i18n="perspective.eyebrow">Progresso com perspectiva</p>
+        <h2 class="display-title reveal" data-i18n="perspective.title">Seu mês não é uma contagem. É um retrato.</h2>
+        <p class="section-deck reveal" data-i18n="perspective.deck">Veja o que marcou o período, como o seu ritmo mudou e quais histórias ficaram.</p>
+      </div>
+
+      <div class="perspective-stage">
+        <div class="perspective-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+        <figure class="phone phone-perspective">
+          <img src="site-img/optimized/pt/recap.jpg" data-src-pt="site-img/optimized/pt/recap.jpg" data-src-en="site-img/optimized/en/recap.jpg" width="900" height="1955" alt="Retrospectiva mensal do Flowt" data-i18n-alt="alt.insights" loading="lazy" decoding="async">
+        </figure>
+        <figure class="perspective-card perspective-card-left" aria-hidden="true">
+          <img src="site-img/optimized/pt/library.jpg" data-src-pt="site-img/optimized/pt/library.jpg" data-src-en="site-img/optimized/en/library.jpg" width="900" height="1955" alt="" loading="lazy" decoding="async">
+        </figure>
+        <figure class="perspective-card perspective-card-right" aria-hidden="true">
+          <img src="site-img/optimized/pt/profile.jpg" data-src-pt="site-img/optimized/pt/profile.jpg" data-src-en="site-img/optimized/en/profile.jpg" width="900" height="1955" alt="" loading="lazy" decoding="async">
+        </figure>
+        <div class="perspective-stat stat-one"><strong>14</strong><span data-i18n="perspective.stat1">histórias</span></div>
+        <div class="perspective-stat stat-two"><strong>03</strong><span data-i18n="perspective.stat2">fases</span></div>
+      </div>
+    </section>
+
+    <section class="closing chapter chapter-warm" id="closing" data-theme="light">
+      <img class="closing-icon reveal" src="images/appicon.png" width="120" height="120" alt="">
+      <h2 class="closing-title reveal" data-i18n="closing.title">Dê mais sentido ao que você assiste.</h2>
+      <p class="closing-subtitle reveal" data-i18n="closing.subtitle">Leve suas histórias, fases e descobertas com você — e encontre o que combina com cada momento.</p>
+      <div class="app-store-badge closing-store-badge reveal" aria-disabled="true">
+        <span class="apple-mark" aria-hidden="true"></span>
+        <span><small data-i18n="store.soon">Em breve na</small><strong>App Store</strong></span>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer" id="footer" data-theme="dark">
+    <div class="footer-brand">
+      <span>Flowt</span>
+      <p data-i18n="footer.signature">Feito por gente. Para quem sente histórias.</p>
+    </div>
+    <nav aria-label="Links do rodapé" data-i18n-aria="aria.footerLinks">
+      <a href="./terms/" data-i18n="footer.terms">Termos de Uso</a>
+      <a href="./privacy/" data-i18n="footer.privacy">Privacidade</a>
+      <a href="#top" data-i18n="footer.top">Voltar ao topo ↑</a>
+    </nav>
+    <div class="footer-social" aria-label="Redes sociais" data-i18n-aria="aria.social">
+      <span class="social-link is-pending" aria-label="Instagram — em breve" data-i18n-aria="aria.instagramSoon"><img src="images/social/instagram.svg" width="20" height="20" alt=""></span>
+      <a class="social-link" href="https://x.com/flowt_app" target="_blank" rel="noopener noreferrer" aria-label="Flowt no X" data-i18n-aria="aria.x"><img src="images/social/x.svg" width="20" height="20" alt=""></a>
+      <a class="social-link" href="https://www.reddit.com/r/flowtapp/" target="_blank" rel="noopener noreferrer" aria-label="Flowt no Reddit" data-i18n-aria="aria.reddit"><img src="images/social/reddit.svg" width="20" height="20" alt=""></a>
+    </div>
+    <small>© <span id="year"></span> Flowt</small>
+  </footer>
+
+  <script src="index.js" defer></script>
 </body>
 </html>
