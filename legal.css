@@ -66,6 +66,26 @@
 .legal-document a:hover { color: var(--clay); }
 .legal-note { margin: 38px 0; padding: 24px 26px; border: 1px solid var(--line-light); border-radius: 20px; background: rgba(255, 253, 248, .5); }
 .legal-note p:last-child { margin-bottom: 0; }
+.support-actions { margin: 0 0 38px; }
+.support-actions p { max-width: 620px; margin-top: 18px; }
+.support-button {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 22px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white) !important;
+  font-size: .92rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: transform .25s ease, background-color .25s ease;
+}
+.support-button:hover { background: var(--clay); transform: translateY(-2px); }
+.support-button:focus-visible { outline: 3px solid var(--clay-bright); outline-offset: 4px; }
+.support-notice { border-color: rgba(224, 119, 84, .35); background: rgba(224, 119, 84, .07); }
 .legal-page .site-footer nav a[aria-current="page"] { color: var(--white); text-decoration: underline; text-decoration-color: var(--clay-bright); text-underline-offset: 6px; }
 
 @media (max-width: 760px) {

@@ -13,6 +13,7 @@
       "footer.signature": "Feito por gente. Para quem sente histórias.",
       "footer.terms": "Termos de Uso",
       "footer.privacy": "Política de Privacidade",
+      "footer.support": "Suporte",
       "footer.top": "Voltar ao topo ↑"
     },
     en: {
@@ -28,6 +29,7 @@
       "footer.signature": "Made by people. For people who feel stories.",
       "footer.terms": "Terms of Use",
       "footer.privacy": "Privacy Policy",
+      "footer.support": "Support",
       "footer.top": "Back to top ↑"
     }
   };
@@ -40,6 +42,10 @@
     terms: {
       pt: { title: "Termos de Uso — Flowt", description: "Termos de Uso do aplicativo Flowt." },
       en: { title: "Terms of Use — Flowt", description: "Terms of Use for the Flowt app." }
+    },
+    support: {
+      pt: { title: "Suporte — Flowt", description: "Página oficial de suporte do aplicativo Flowt." },
+      en: { title: "Support — Flowt", description: "Official support page for the Flowt app." }
     }
   };
 
